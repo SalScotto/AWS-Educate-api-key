@@ -14,11 +14,11 @@ Create a creds.py file with this structure:
 
 Create venv w/ requirements.txt
 
-    (python3 -m venv <path>)
-    source <path>/bin/activate
+    python3 -m venv <pathvenv>
+    source <pathvenv>/bin/activate
     pip install -r requirements.txt
 
 
-Copy geckodriver in a path available in $PATH (recommended `<venv>/bin/geckdriver` if you decide to use virtual environments)
+Copy geckodriver in a path available in $PATH (recommended `<pathvenv>/bin/geckdriver` if you decide to use virtual environments)
 
 Launch selen.py and wait for the API_Keys to appear
