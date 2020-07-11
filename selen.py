@@ -26,7 +26,11 @@ xPaths = {
 }
 
 print("Initializing Selenium...")
-driver = webdriver.Firefox()
+
+opt = webdriver.FirefoxOptions()
+opt.headless = True
+
+driver = webdriver.Firefox(options=opt)
 try:
     driver.get(awsEducateLogin)
     driver.implicitly_wait(15)
